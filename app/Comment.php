@@ -33,7 +33,7 @@ class Comment extends Model implements ReactableContract
      *
      * @var array
      */
-    protected $with = ['comments'];
+    protected $with = ['comments', 'loveReactant.reactionCounters'];
 
     /**
      * Get all of the commentable resources.
